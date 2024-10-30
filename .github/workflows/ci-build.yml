@@ -26,6 +26,8 @@ on:
 jobs:
   codeql_analysis:
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_RUNNER_DEBUG: true
 
     permissions:
       contents: read
